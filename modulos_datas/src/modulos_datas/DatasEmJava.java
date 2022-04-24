@@ -33,7 +33,7 @@ public class DatasEmJava {
 		simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm.ss");
 
 		System.out.println("Data a patir do simple date format = " + simpleDateFormat.format(date));
-		System.out.println("Calendar Data a patir do simple date format = " +simpleDateFormat.format(calendar.getInstance().getTime()));
+		System.out.println("Calendar Data a patir do simple date format = " +simpleDateFormat.format(calendar.getTime()));
 		System.out.println("Data em formato para Banco de Dados : "+simpleDateFormat2.format(date));
 		System.out.println("DATA e hora : "+ simpleDateFormat.format(date));
 		System.out.println("Objeto Date:"+ simpleDateFormat.parse("1987-10-18 20:10.2"));
