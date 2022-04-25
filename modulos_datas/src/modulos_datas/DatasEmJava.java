@@ -8,14 +8,16 @@ import java.util.Date;
 public class DatasEmJava {
 
 	public static void main(String[] args) throws ParseException {
-	SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
-	Date dataVencimentoBoleto = simpleDateFormat.parse("23/04/2022");
-	Date dataAtualHoje = simpleDateFormat.parse("25/04/2022");
-	if(dataVencimentoBoleto.after(dataAtualHoje)) {
-		System.out.println("Boleto não vencido!");
-	}else {
-		System.out.println("Boleto vencido!");
-	}
-	
+	Calendar calendar = Calendar.getInstance(); /*Pega a Data Atual*/
+		calendar.setTime(new SimpleDateFormat("dd-MM-yyyy").parse("10-04-2022"));
+		
+		calendar.add(Calendar.DAY_OF_MONTH, 5);/*Data de hoje mais 5 dias*/
+		System.out.println("Somando o dia do mês: " + new SimpleDateFormat("dd-MM-yyyy").format(calendar.getTime()));
+		
+		calendar.add(Calendar.MONTH, 1);
+		System.out.println("Somando Mês : " + new SimpleDateFormat("dd-MM-yyyy").format(calendar.getTime()));
+		
+		calendar.add(Calendar.YEAR, 1);
+		System.out.println("Somando ano : " + new SimpleDateFormat("dd-MM-yyyy").format(calendar.getTime()));
 	}
 }
