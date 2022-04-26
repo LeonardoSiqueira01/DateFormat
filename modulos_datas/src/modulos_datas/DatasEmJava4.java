@@ -18,7 +18,7 @@ public class DatasEmJava4 {
 
 		System.out.println("Duração em horas : " + duracao.toHours());
 
-		System.out.println("Duração em dias : " + duracao.toDays());
+		System.out.println("Duração em dias : " + duracao.toDays()); 
   
 	}
 }
