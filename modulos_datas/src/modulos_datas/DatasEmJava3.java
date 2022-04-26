@@ -16,6 +16,6 @@ public class DatasEmJava3 {
 	System.out.println("Mês do ano: "+localDate.getMonth());
 	System.out.println("Ano : "+localDate.getYear());
 
-	}
+	} 
 
-}
+}  
